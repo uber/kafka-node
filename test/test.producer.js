@@ -106,7 +106,7 @@ describe('Partitioned Producer', function () {
                     message.should.be.ok;
                     var offsetPartition0 = message[topic]['0'];
                     var offsetPartition1 = message[topic]['1'];
-                    var consumer = new Consumer(client, [{ topic: topic, partition: 0, offset: offsetPartition0 }, { topic: topic, partition: 1, offset: offsetPartition1 }], { autoCommit: false, fromOffset: true });                    
+                    var consumer = new Consumer(client, [{ topic: topic, partition: 0, offset: offsetPartition0 }, { topic: topic, partition: 1, offset: offsetPartition1 }], { autoCommit: false, fromOffset: true });
                     var i = 0;
                     var messageCount = 3; // Since we are sending 1 message to partition 0 and two too partition 1
 
