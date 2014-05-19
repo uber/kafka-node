@@ -1,5 +1,5 @@
 ﻿var config = {
-    zoo: 'localhost:2181/kafka0.8'
+    zoo: 'localhost:2181/'
 };
 
 module.exports = config;
